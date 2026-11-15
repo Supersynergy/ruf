@@ -1,30 +1,43 @@
-# Ruf
+<h1 align="center">Ruf</h1>
 
-**Vom Mac über dein Android-Handy anrufen**
+<p align="center"><strong>Vom Mac über dein Android-Handy anrufen</strong></p>
 
-Ein Telefonlink in einer E-Mail oder im CRM lädt die Nummer ins Wählfeld von Ruf. Du kannst die Nummer auch eintippen. Mit **Anrufen** startest du das Gespräch auf deinem verbundenen Android-Handy. Ruf wird von Supersynergy entwickelt. Das Gespräch führst du am Handy oder über dessen Headset.
+<p align="center">
+  <a href="https://github.com/Supersynergy/ruf/releases/latest"><strong>Download für macOS</strong></a> ·
+  <a href="#erster-anruf">Erster Anruf</a> ·
+  <a href="docs/ANLEITUNG.md">Anleitung</a> ·
+  <a href="CHANGELOG.md">Versionsverlauf</a>
+</p>
 
-**[Ruf für macOS herunterladen](https://github.com/Supersynergy/super-mac-android-phone-dialer/releases/latest)**
+[![Ruf von Supersynergy mit der Mac-Wähltastatur und drei Beispielkontakten in der Kurzwahl](docs/assets/social-preview.png)](docs/assets/waehltastatur.png)
 
-Frühere Namen sind **Super Mac Android Phone Dialer (SMAPD)** und **PhonePilot Dial**. Beim Update verwendet Ruf dieselben lokalen Favoriten, Rückrufnotizen und Einstellungen für Telefonlinks.
+Klicke am Mac auf eine Telefonnummer in Mail oder im CRM. Ruf übernimmt sie ins Wählfeld. Mit **Anrufen** wählt dein Android-Handy über seinen Mobilfunkanschluss. Du sprichst am Handy oder über dessen Headset.
 
-## Einrichtung
+**macOS 13 oder neuer** · Apple Silicon und Intel · Deutsch und Englisch
 
-1. Öffne das Disk-Image und ziehe **Ruf (Supersynergy)** nach **Programme**.
-2. Öffne **Gerät verbinden** und wähle die entpackten Android SDK Platform-Tools.
-3. Verbinde dein Android-Handy per USB und bestätige USB-Debugging auf dem entsperrten Gerät. Bereits mit ADB gekoppeltes WLAN funktioniert ebenfalls.
-4. Damit Ruf Telefonlinks öffnet, wähle unter **Gerät verbinden** die Option **Für Telefonlinks als Standard setzen**.
+## Erster Anruf
 
-Die Universal-App unterstützt macOS 13 oder neuer, Apple Silicon und Intel. Deutsch und Englisch sind enthalten. Die App ist ad hoc signiert und hat keine Apple-Notarisierung. Gatekeeper kann den ersten Start blockieren.
+1. Melde dich mit dem GitHub-Konto an, das Zugriff auf dieses private Repository hat. Lade das Disk-Image aus dem [aktuellen Release](https://github.com/Supersynergy/ruf/releases/latest) und ziehe **Ruf (Supersynergy)** nach **Programme**. Die App ist ad hoc signiert. Da eine Apple-Notarisierung fehlt, kann macOS beim ersten Start eine [Bestätigung für Ruf](docs/ANLEITUNG.md#wenn-macos-den-entwickler-nicht-bestätigen-kann) verlangen.
+2. Entpacke die [Android SDK Platform-Tools für Mac](https://developer.android.com/tools/releases/platform-tools). Öffne **Gerät verbinden** in Ruf und wähle den entpackten Ordner.
+3. Aktiviere USB-Debugging auf dem Handy, verbinde es per USB und bestätige die Verbindung auf dem entsperrten Gerät.
+4. Tippe eine Nummer ein. **Wählansicht** zeigt sie auf dem Handy zur Kontrolle. **Anrufen** startet den Anruf. Für Links aus Mail oder CRM wähle unter **Gerät verbinden** einmal **Für Telefonlinks als Standard setzen**.
 
-## Anrufe und Rückrufe
+## Im Arbeitsalltag
 
-Unter **Android-Anrufliste** kannst du den Abgleich für ein einzelnes Handy einschalten. Ruf liest dann die letzten 100 Anrufe des ausgewählten Handys ungefähr jede Minute, solange die App geöffnet ist. Einige Handys sperren den Zugriff. Der Filter **Verpasst** hilft beim Rückruf. Du kannst die Nummer ins Wählfeld laden oder einen Termin vorbereiten. Beim Ausschalten löscht Ruf die lokale Kopie für dieses Gerät.
+| Wenn du … | In Ruf |
+| --- | --- |
+| einen Kontakt oft anrufst | Speichere ihn in der **Kurzwahl**. Die Suche versteht Namen, Nummern und T9-Ziffern. |
+| nach einem Gespräch etwas festhalten willst | Trage unter **Notizen & Rückrufe** Ergebnis und nächsten Termin ein. Eine einzelne Notiz kannst du ins CRM kopieren. |
+| einen verpassten Anruf zurückgeben willst | Aktiviere die **Android-Anrufliste** für dieses Handy. Wähle **Verpasst** und übernimm die Nummer oder plane den Rückruf. |
 
-**Notizen & Rückrufe** zeigt anstehende Termine nach Fälligkeit. Im Eintragsmenü kannst du eine einzelne Notiz fürs CRM kopieren. Willst du das gesamte Vertriebsjournal auf dem Handy mitnehmen, bestätige die Kopie auf das ausgewählte Gerät. Jede Übertragung ersetzt die lesbare Datei `Documents/SMAPD/Vertriebsjournal.txt` im gemeinsamen Speicher des Handys.
+Der Abgleich ist pro Handy freiwillig. Wie oft Ruf die Anrufliste liest, welche Daten lokal bleiben und wie der Export aufs Handy funktioniert, steht in der [Anleitung](docs/ANLEITUNG.md#anrufliste-und-gesprächsnotizen).
 
-## English
+## Updates und Hilfe
 
-Ruf by Supersynergy is an Android dialer for macOS. Dial on your Mac and speak on your connected Android phone or its headset. Open telephone links, find T9 favorites and schedule callbacks. Enable the Android call log for each phone separately to see its latest 100 calls and follow up on missed calls. Switching sync off removes that phone’s local copy. To take the complete sales notebook with you, confirm an export from Notes & callbacks. It replaces a plain-text file in the selected phone’s shared Documents folder.
+Die App hieß früher **Super Mac Android Phone Dialer (SMAPD)** und **PhonePilot Dial**. Schließe die bisherige Version und öffne Ruf aus **Programme**. Favoriten, Gesprächsnotizen und Rückrufe verwenden dieselbe lokale Ablage. Die [Anleitung](docs/ANLEITUNG.md) hilft auch bei mehreren Geräten und beim Prüfen des Downloads.
 
-Requires macOS 13 or later and Android SDK Platform-Tools for calls. The download includes a bilingual setup guide. The app is ad hoc signed and has not been notarized by Apple.
+Für Rückmeldungen gibt es die [privaten Issues](https://github.com/Supersynergy/ruf/issues). Nenne die Ruf-, macOS- und Android-Version sowie den Schritt, an dem es hakt. Verwende für Beispiele fiktive Telefonnummern.
+
+*English:* Ruf is an Android dialer for macOS. Open a phone link or type a number on your Mac, then place the call on your connected Android phone. The disk image includes a setup guide in English and German.
+
+[Herausgeber und Lizenzhinweise](LICENSE.md)

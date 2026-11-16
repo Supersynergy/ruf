@@ -2,7 +2,7 @@
 
 ## Download prüfen
 
-Lade das Disk-Image und die Datei `SHA256SUMS.txt` aus demselben privaten Release in einen gemeinsamen Ordner. Wenn du GitHub CLI verwendest, lädt dieser Befehl Version 2.7.2 mit deinem angemeldeten Konto herunter und vergleicht das Disk-Image mit der veröffentlichten Prüfsumme.
+Lade das Disk-Image und die Datei `SHA256SUMS.txt` aus demselben Release in einen gemeinsamen Ordner. Wenn du GitHub CLI verwendest, lädt dieser Befehl Version 2.7.2 herunter und vergleicht das Disk-Image mit der veröffentlichten Prüfsumme.
 
 ```sh
 mkdir -p Ruf-2.7.2
@@ -15,7 +15,7 @@ Bei Erfolg erscheint hinter dem DMG-Dateinamen `OK`. Öffne das Disk-Image und z
 
 ### Wenn macOS den Entwickler nicht bestätigen kann
 
-Ruf ist ad hoc signiert. Wenn du Ruf aus diesem privaten Release geladen hast, dem Herausgeber vertraust und die Prüfsumme stimmt, kannst du den ersten Start ausdrücklich für diese App erlauben. Öffne Ruf zunächst einmal. Wähle anschließend in den **Systemeinstellungen → Datenschutz & Sicherheit** bei Ruf **Dennoch öffnen** und bestätige. Auf einem verwalteten Mac kann deine IT diese Möglichkeit einschränken. [Apple erklärt die Meldungen beim Öffnen einer App](https://support.apple.com/de-de/102445)
+Ruf ist ad hoc signiert. Wenn du Ruf aus diesem Release geladen hast, dem Herausgeber vertraust und die Prüfsumme stimmt, kannst du den ersten Start ausdrücklich für diese App erlauben. Öffne Ruf zunächst einmal. Wähle anschließend in den **Systemeinstellungen → Datenschutz & Sicherheit** bei Ruf **Dennoch öffnen** und bestätige. Auf einem verwalteten Mac kann deine IT diese Möglichkeit einschränken. [Apple erklärt die Meldungen beim Öffnen einer App](https://support.apple.com/de-de/102445)
 
 ## Handy verbinden
 

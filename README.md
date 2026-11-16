@@ -19,7 +19,7 @@ Klicke am Mac auf eine Telefonnummer in Mail oder im CRM. Ruf übernimmt sie ins
 
 ## Erster Anruf
 
-1. Melde dich mit dem GitHub-Konto an, das Zugriff auf dieses private Repository hat. Lade das Disk-Image aus dem [aktuellen Release](https://github.com/Supersynergy/ruf/releases/latest) und ziehe **Ruf (Supersynergy)** nach **Programme**. Die App ist ad hoc signiert. Da eine Apple-Notarisierung fehlt, kann macOS beim ersten Start eine [Bestätigung für Ruf](docs/ANLEITUNG.md#wenn-macos-den-entwickler-nicht-bestätigen-kann) verlangen.
+1. Lade das Disk-Image aus dem [aktuellen Release](https://github.com/Supersynergy/ruf/releases/latest) und ziehe **Ruf (Supersynergy)** nach **Programme**. Die App ist ad hoc signiert. Da eine Apple-Notarisierung fehlt, kann macOS beim ersten Start eine [Bestätigung für Ruf](docs/ANLEITUNG.md#wenn-macos-den-entwickler-nicht-bestätigen-kann) verlangen.
 2. Entpacke die [Android SDK Platform-Tools für Mac](https://developer.android.com/tools/releases/platform-tools). Öffne links unten **Android-Verbindung** in Ruf und wähle den entpackten Ordner.
 3. Aktiviere USB-Debugging auf dem Handy, verbinde es per USB und bestätige die Verbindung auf dem entsperrten Gerät.
 4. Tippe eine Nummer ein. **Wählansicht** zeigt sie auf dem Handy zur Kontrolle. **Anrufen** startet den Anruf. Für Links aus Mail oder CRM wähle unter **Android-Verbindung** einmal **Für Telefonlinks als Standard setzen**.

@@ -1,5 +1,14 @@
 # Versionsverlauf
 
+## 2.7.2 · 16. November 2026
+
+- Gesprächsleiste und rote Auflegen-Taste erscheinen nur bei einem Anruf.
+- Der doppelte Verbindungsstatus rechts oben entfällt; die Einrichtung bleibt links unten erreichbar.
+- Das grüne Hörer-und-Pfeil-Symbol bleibt das Ruf-Logo, jetzt auch direkt in der README. Neue Bildschirmbilder zeigen die aktuelle Oberfläche mit fiktiven Daten.
+- Dieser Release bündelt die bisher lokal ausgelieferten Fassungen 2.4–2.7.1: Office-Übergabe mit Bestätigung, Tagesrückrufe, Android-Telefonbuch, Gesprächssteuerung, optionale Kontaktbilder, CLI und schaltbares SynergyCoder-Plugin.
+
+[Release 2.7.2](https://github.com/Supersynergy/ruf/releases/tag/v2.7.2)
+
 ## 2.3.1 · 15. November 2026
 
 Ruf und die bisherigen Downloads sind für freigeschaltete GitHub-Konten unter **Supersynergy/ruf** verfügbar. Die neue Produktansicht zeigt Wähltastatur und Kurzwahl. Eine kurze Anleitung führt bis zum ersten Anruf und erklärt die freiwillige Übernahme der Android-Anrufliste. [Release 2.3.1](https://github.com/Supersynergy/ruf/releases/tag/v2.3.1)

@@ -2,13 +2,13 @@
 
 ## Download prüfen
 
-Lade das Disk-Image und die Datei `SHA256SUMS.txt` aus demselben privaten Release in einen gemeinsamen Ordner. Wenn du GitHub CLI verwendest, lädt dieser Befehl Version 2.3.1 mit deinem angemeldeten Konto herunter und vergleicht das Disk-Image mit der veröffentlichten Prüfsumme.
+Lade das Disk-Image und die Datei `SHA256SUMS.txt` aus demselben privaten Release in einen gemeinsamen Ordner. Wenn du GitHub CLI verwendest, lädt dieser Befehl Version 2.7.2 mit deinem angemeldeten Konto herunter und vergleicht das Disk-Image mit der veröffentlichten Prüfsumme.
 
 ```sh
-mkdir -p Ruf-2.3.1
-gh release download v2.3.1 --repo Supersynergy/ruf --dir Ruf-2.3.1 \
+mkdir -p Ruf-2.7.2
+gh release download v2.7.2 --repo Supersynergy/ruf --dir Ruf-2.7.2 \
   --pattern '*.dmg' --pattern SHA256SUMS.txt
-(cd Ruf-2.3.1 && shasum -a 256 -c SHA256SUMS.txt)
+(cd Ruf-2.7.2 && shasum -a 256 -c SHA256SUMS.txt)
 ```
 
 Bei Erfolg erscheint hinter dem DMG-Dateinamen `OK`. Öffne das Disk-Image und ziehe **Ruf (Supersynergy)** nach **Programme**. Beim Update schließt du zuerst die bisherige App. Die Paketdatei enthält die App für Intel und Apple Silicon sowie eine zweisprachige Kurzanleitung.
@@ -19,11 +19,21 @@ Ruf ist ad hoc signiert. Wenn du Ruf aus diesem privaten Release geladen hast, d
 
 ## Handy verbinden
 
-Entpacke die Android SDK Platform-Tools auf dem Mac. Wähle in Ruf **Gerät verbinden → Platform-Tools-Ordner wählen …**. Aktiviere USB-Debugging auf dem Handy und bestätige die Verbindungsanfrage auf dem entsperrten Gerät. Unter **Erneut suchen** erscheint es anschließend in der Geräteliste. Bei mehreren Geräten wählst du dort das gewünschte Handy. Ruf kann auch ein Gerät verwenden, das bereits über WLAN mit ADB verbunden ist. [Android SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools) · [USB-Debugging einrichten](https://developer.android.com/studio/run/device)
+Entpacke die Android SDK Platform-Tools auf dem Mac. Wähle in Ruf **Android-Verbindung → Platform-Tools-Ordner wählen …**. Aktiviere USB-Debugging auf dem Handy und bestätige die Verbindungsanfrage auf dem entsperrten Gerät. Unter **Erneut suchen** erscheint es anschließend in der Geräteliste. Bei mehreren Geräten wählst du dort das gewünschte Handy. Ruf kann auch ein Gerät verwenden, das bereits über WLAN mit ADB verbunden ist. [Android SDK Platform-Tools](https://developer.android.com/tools/releases/platform-tools) · [USB-Debugging einrichten](https://developer.android.com/studio/run/device)
 
 ## Nummern aus Mail oder CRM
 
-Wähle unter **Gerät verbinden** die Option **Für Telefonlinks als Standard setzen**. Ein Klick auf einen `tel:`-Link lädt die Nummer ins Wählfeld am Mac. **Wählansicht** öffnet sie im Telefonprogramm auf Android. **Anrufen** übergibt den Anruf an das ausgewählte Handy.
+Wähle unter **Android-Verbindung** die Option **Für Telefonlinks als Standard setzen**. Ein Klick auf einen `tel:`-Link lädt die Nummer ins Wählfeld am Mac. **Wählansicht** öffnet sie im Telefonprogramm auf Android. **Anrufen** übergibt den Anruf an das ausgewählte Handy.
+
+## Gespräch steuern
+
+Nur bei einem eingehenden oder laufenden Anruf erscheint oben die Gesprächsleiste. Ohne Anruf bleiben Gesprächsleiste und rote Taste ausgeblendet. Über das Reglersymbol neben **Wähltastatur** öffnest du Telefonsteuerung und Plugins. Dort lässt sich der Android-Anrufhelfer nach Bestätigung auf dem ausgewählten Handy einrichten und sein Zugriff wieder entziehen. Er benötigt Android 10 oder neuer.
+
+Im Gespräch sind je nach Android-Gerät Mikrofon, Lautsprecher, Halten/Fortsetzen und Tonwahl verfügbar. Die Tonwahl öffnet sich als kleines Fenster; Escape schließt es. Cmd-L setzt den Fokus auf die Rufnummer. Return öffnet die Wählansicht, ohne direkt anzurufen.
+
+![Gesprächssteuerung mit simuliertem Anruf und fiktivem Kontakt](assets/gespraech.png)
+
+Kontaktbilder lassen sich lokal auswählen oder nach Berechtigungsfreigabe vom Handy laden. Das Übertragen auf Android ersetzt das Bild erst nach Bestätigung; das Kontaktkonto kann es weiter synchronisieren. Automatisches Laden fehlender Bilder bei Anrufen ist freiwillig und gilt nur für das freigegebene Handy.
 
 ## Anrufliste und Gesprächsnotizen
 

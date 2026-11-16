@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/ruf-logo.png" width="96" alt="Ruf – grüner Telefonhörer mit Pfeil"></p>
+<p align="center"><img src="docs/assets/ruf-logo.png" width="256" alt="Ruf – grüner Telefonhörer mit Pfeil"></p>
 
 <h1 align="center">Ruf</h1>
 
